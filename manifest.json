@@ -1,0 +1,14 @@
+{
+  "name": "Youtube Ad-Skip",
+  "version": "1.0",
+  "description": "This will automatically skip ad for you",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["skip.js"],
+      "run_at": "document_idle",
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": ["tabs", "activeTab"]
+}
